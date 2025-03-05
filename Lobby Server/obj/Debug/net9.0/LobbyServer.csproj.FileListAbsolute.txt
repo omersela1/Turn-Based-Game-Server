@@ -1,0 +1,114 @@
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.csproj.AssemblyReference.cache
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.AssemblyInfoInputs.cache
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.AssemblyInfo.cs
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.csproj.CoreCompileInputs.cache
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.MvcApplicationPartsAssemblyInfo.cs
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.MvcApplicationPartsAssemblyInfo.cache
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/appsettings.Development.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/appsettings.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/LobbyServer.staticwebassets.endpoints.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/LobbyServer
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/LobbyServer.deps.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/LobbyServer.runtimeconfig.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/LobbyServer.pdb
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/Pipelines.Sockets.Unofficial.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/StackExchange.Redis.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/scopedcss/bundle/LobbyServer.styles.css
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets.build.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets.development.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets/msbuild.LobbyServer.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets/msbuild.LobbyServer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets/msbuild.build.LobbyServer.props
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.LobbyServer.props
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.LobbyServer.props
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/staticwebassets.pack.json
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbySer.D107D153.Up2Date
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/refint/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.pdb
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/LobbyServer.genruntimeconfig.cache
+/Users/omersela/Documents/Game Servers/HW2/LobbyServer/obj/Debug/net9.0/ref/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/appsettings.Development.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/appsettings.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/LobbyServer.staticwebassets.endpoints.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/LobbyServer
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/LobbyServer.deps.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/LobbyServer.runtimeconfig.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/LobbyServer.pdb
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/Pipelines.Sockets.Unofficial.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/StackExchange.Redis.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.csproj.AssemblyReference.cache
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.AssemblyInfoInputs.cache
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.AssemblyInfo.cs
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.csproj.CoreCompileInputs.cache
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.MvcApplicationPartsAssemblyInfo.cs
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.MvcApplicationPartsAssemblyInfo.cache
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/scopedcss/bundle/LobbyServer.styles.css
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets.build.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets.development.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.LobbyServer.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.LobbyServer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.build.LobbyServer.props
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.LobbyServer.props
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.LobbyServer.props
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/staticwebassets.pack.json
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbySer.D107D153.Up2Date
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/refint/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.pdb
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/LobbyServer.genruntimeconfig.cache
+/Users/omersela/Documents/Game Servers/HW3/Lobby Server/obj/Debug/net9.0/ref/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/appsettings.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/LobbyServer.staticwebassets.endpoints.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/appsettings.Development.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/LobbyServer
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/LobbyServer.deps.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/LobbyServer.runtimeconfig.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/LobbyServer.pdb
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/Pipelines.Sockets.Unofficial.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/StackExchange.Redis.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.csproj.AssemblyReference.cache
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.AssemblyInfoInputs.cache
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.AssemblyInfo.cs
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.csproj.CoreCompileInputs.cache
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.MvcApplicationPartsAssemblyInfo.cs
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.MvcApplicationPartsAssemblyInfo.cache
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/scopedcss/bundle/LobbyServer.styles.css
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets.build.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets.development.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.LobbyServer.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.LobbyServer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.build.LobbyServer.props
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.LobbyServer.props
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.LobbyServer.props
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/staticwebassets.pack.json
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbySer.D107D153.Up2Date
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/refint/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.pdb
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.genruntimeconfig.cache
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/ref/LobbyServer.dll

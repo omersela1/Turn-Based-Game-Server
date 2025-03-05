@@ -1,0 +1,219 @@
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/appsettings.Development.json
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/appsettings.json
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.exe
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.deps.json
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.runtimeconfig.json
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.dll
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.csproj.AssemblyReference.cache
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfoInputs.cache
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfo.cs
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.csproj.CoreCompileInputs.cache
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cs
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cache
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets/msbuild.TicTacToeGameServer.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets/msbuild.build.TicTacToeGameServer.props
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.TicTacToeGameServer.props
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.TicTacToeGameServer.props
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets.pack.json
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets.build.json
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets.development.json
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/scopedcss/bundle/TicTacToeGameServer.styles.css
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.csproj.CopyComplete
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.dll
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/refint/TicTacToeGameServer.dll
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.genruntimeconfig.cache
+C:/Projects/TicTacToeGameServer/obj/Debug/net6.0/ref/TicTacToeGameServer.dll
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/websocket-sharp-standard.dll
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+C:/Projects/TicTacToeGameServer/bin/Debug/net6.0/StackExchange.Redis.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/appsettings.Development.json
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/appsettings.json
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.exe
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.deps.json
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.runtimeconfig.json
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/StackExchange.Redis.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/bin/Debug/net6.0/websocket-sharp-standard.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.csproj.AssemblyReference.cache
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfoInputs.cache
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfo.cs
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.csproj.CoreCompileInputs.cache
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets/msbuild.TicTacToeGameServer.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets/msbuild.build.TicTacToeGameServer.props
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.TicTacToeGameServer.props
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.TicTacToeGameServer.props
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets.pack.json
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets.build.json
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/staticwebassets.development.json
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/scopedcss/bundle/TicTacToeGameServer.styles.css
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.csproj.CopyComplete
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/refint/TicTacToeGameServer.dll
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/TicTacToeGameServer.genruntimeconfig.cache
+C:/Users/armet/Downloads/TicTacToeGameServer/obj/Debug/net6.0/ref/TicTacToeGameServer.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/appsettings.Development.json
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/appsettings.json
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/TicTacToeGameServer.exe
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/TicTacToeGameServer.deps.json
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/TicTacToeGameServer.runtimeconfig.json
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/TicTacToeGameServer.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/StackExchange.Redis.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/bin/Debug/net6.0/websocket-sharp-standard.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.csproj.AssemblyReference.cache
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfoInputs.cache
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfo.cs
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.csproj.CoreCompileInputs.cache
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/staticwebassets.build.json
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/staticwebassets.development.json
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/staticwebassets/msbuild.TicTacToeGameServer.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/staticwebassets/msbuild.build.TicTacToeGameServer.props
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.TicTacToeGameServer.props
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.TicTacToeGameServer.props
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/staticwebassets.pack.json
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/scopedcss/bundle/TicTacToeGameServer.styles.css
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacTo.81891D30.Up2Date
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/refint/TicTacToeGameServer.dll
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/TicTacToeGameServer.genruntimeconfig.cache
+C:/Users/armet/Downloads/Lesson 11 - Class/obj/Debug/net6.0/ref/TicTacToeGameServer.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/appsettings.Development.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/appsettings.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/TicTacToeGameServer.exe
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/TicTacToeGameServer.deps.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/TicTacToeGameServer.runtimeconfig.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/TicTacToeGameServer.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/StackExchange.Redis.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/bin/Debug/net6.0/websocket-sharp-standard.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.csproj.AssemblyReference.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfoInputs.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfo.cs
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.csproj.CoreCompileInputs.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cs
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/staticwebassets/msbuild.TicTacToeGameServer.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/staticwebassets/msbuild.build.TicTacToeGameServer.props
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.TicTacToeGameServer.props
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.TicTacToeGameServer.props
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/staticwebassets.pack.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/staticwebassets.build.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/staticwebassets.development.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/scopedcss/bundle/TicTacToeGameServer.styles.css
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.csproj.CopyComplete
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/refint/TicTacToeGameServer.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/TicTacToeGameServer.genruntimeconfig.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 11/Lesson 11 Game Server/obj/Debug/net6.0/ref/TicTacToeGameServer.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/appsettings.Development.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/appsettings.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/TicTacToeGameServer.exe
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/TicTacToeGameServer.deps.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/TicTacToeGameServer.runtimeconfig.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/TicTacToeGameServer.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/Newtonsoft.Json.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/StackExchange.Redis.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/bin/Debug/net6.0/websocket-sharp-standard.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.csproj.AssemblyReference.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.GeneratedMSBuildEditorConfig.editorconfig
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfoInputs.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfo.cs
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.csproj.CoreCompileInputs.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cs
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/staticwebassets/msbuild.TicTacToeGameServer.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/staticwebassets/msbuild.build.TicTacToeGameServer.props
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.TicTacToeGameServer.props
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.TicTacToeGameServer.props
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/staticwebassets.pack.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/staticwebassets.build.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/staticwebassets.development.json
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/scopedcss/bundle/TicTacToeGameServer.styles.css
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.csproj.CopyComplete
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/refint/TicTacToeGameServer.dll
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.pdb
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/TicTacToeGameServer.genruntimeconfig.cache
+C:/Shenkar/2025/Semester A Server/Class Lessons/Lesson 13/Lesson 13 Game Server/obj/Debug/net6.0/ref/TicTacToeGameServer.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/appsettings.json
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/appsettings.Development.json
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/TicTacToeGameServer.staticwebassets.endpoints.json
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/TicTacToeGameServer
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/TicTacToeGameServer.deps.json
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/TicTacToeGameServer.runtimeconfig.json
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/TicTacToeGameServer.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/TicTacToeGameServer.pdb
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/Pipelines.Sockets.Unofficial.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/StackExchange.Redis.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/omersela/Documents/Game Servers/HW3/bin/Debug/net6.0/websocket-sharp-standard.dll
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.csproj.AssemblyReference.cache
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfoInputs.cache
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.AssemblyInfo.cs
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.csproj.CoreCompileInputs.cache
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cs
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.MvcApplicationPartsAssemblyInfo.cache
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/scopedcss/bundle/TicTacToeGameServer.styles.css
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets.build.json
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets.development.json
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets.build.endpoints.json
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets/msbuild.TicTacToeGameServer.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets/msbuild.TicTacToeGameServer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets/msbuild.build.TicTacToeGameServer.props
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.TicTacToeGameServer.props
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.TicTacToeGameServer.props
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacTo.81891D30.Up2Date
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.dll
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/refint/TicTacToeGameServer.dll
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.pdb
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/TicTacToeGameServer.genruntimeconfig.cache
+/Users/omersela/Documents/Game Servers/HW3/obj/Debug/net6.0/ref/TicTacToeGameServer.dll
