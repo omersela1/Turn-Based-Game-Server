@@ -56,6 +56,22 @@ namespace TicTacToeGameServer.Models
             }
         }
 
+        public Dictionary<string, object> ConvertToDictionary()
+        {
+            return new Dictionary<string, object>
+            {
+                { "MatchId", _matchId },
+                { "IsRoomActive", _isRoomActive },
+                { "MoveCounter", _moveCounter },
+                { "TurnIndex", _turnIndex },
+                { "TurnTime", _turnTime },
+                { "TimeOutTime", _timeOutTime },
+                { "PlayersOrder", _playersOrder },
+                { "Users", _users.Keys.ToList() }
+            };
+        }
+
+
         #region Requests
         public Dictionary<string,object> ReceivedMove(User curUser,string boardIndex)
         {

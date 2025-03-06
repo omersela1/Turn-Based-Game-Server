@@ -112,3 +112,4 @@
 /Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.pdb
 /Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.genruntimeconfig.cache
 /Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/ref/LobbyServer.dll
+/Users/omersela/Documents/Game Servers/Final Project/Lobby Server/obj/Debug/net9.0/LobbyServer.sourcelink.json

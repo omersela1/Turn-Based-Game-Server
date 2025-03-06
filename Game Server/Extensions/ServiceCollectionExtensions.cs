@@ -36,6 +36,7 @@ namespace TicTacToeGameServer.Extensions
                 .AddSingleton<ISendMoveRequest, SendMoveRequest>()
                 .AddSingleton<IStopGameRequest, StopGameRequest>()
                 .AddTransient<ConnectionHandler>()
+                .AddTransient<IDictionary<string, IServiceHandler>, ServiceDictionary>()
                 .AddSingleton<SessionManager>()
                 .AddSingleton<SearchingManager>()
                 .AddSingleton<MatchingManager>()

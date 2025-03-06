@@ -115,3 +115,4 @@
 /Users/omersela/Documents/Game Servers/Final Project/Game Server/obj/Debug/net9.0/TicTacToeGameServer.pdb
 /Users/omersela/Documents/Game Servers/Final Project/Game Server/obj/Debug/net9.0/TicTacToeGameServer.genruntimeconfig.cache
 /Users/omersela/Documents/Game Servers/Final Project/Game Server/obj/Debug/net9.0/ref/TicTacToeGameServer.dll
+/Users/omersela/Documents/Game Servers/Final Project/Game Server/obj/Debug/net9.0/TicTacToeGameServer.sourcelink.json

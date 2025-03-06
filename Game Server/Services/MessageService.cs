@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using TicTacToeGameServer.Interfaces;
 using TicTacToeGameServer.Models;
+using TicTacToeGameServer.Services.ClientRequests;
 
 namespace TicTacToeGameServer.Services
 {
@@ -12,17 +13,22 @@ namespace TicTacToeGameServer.Services
         private readonly ISendMoveRequest _sendMoveRequest;
         private readonly IStopGameRequest _stopGameRequest;
 
+        private readonly IDictionary<string, IServiceHandler> _services;
+
+
         public MessageService(IReadyToPlayService readyToPlayService, 
-            ISendMoveRequest sendMoveRequest, IStopGameRequest stopGameRequest) 
+            ISendMoveRequest sendMoveRequest, IStopGameRequest stopGameRequest, IDictionary<string, IServiceHandler> services) 
         {
             _readyToPlayService = readyToPlayService;
             _sendMoveRequest = sendMoveRequest;
             _stopGameRequest =  stopGameRequest;
+            _services = services;
+            
         }
 
         public async Task<object> HandleMessageAsync(User curUser, string data)
         {
-            Dictionary<string,object> response = new Dictionary<string,object>();
+            Console.WriteLine("MessageService: HandleMessageAsync");
             try
             {
                 if(curUser != null)
@@ -31,24 +37,27 @@ namespace TicTacToeGameServer.Services
                     if(msgData.ContainsKey("Service"))
                     {
                         string service = msgData["Service"].ToString();
-                        switch(service)
+                        if(_services.ContainsKey(service))
                         {
-                            case "ReadyToPlay":_readyToPlayService.Get(curUser, msgData);break;
-                            case "SendMove":_sendMoveRequest.Get(curUser, msgData); break;
-                            case "StopGame":_stopGameRequest.Get(curUser, msgData); break;
-                        }
+                           Dictionary<string,object> response = new Dictionary<string,object>
+                                {
+                                    {"Response", service },
+                                    {"Rooms", (Dictionary<string,object>)_services[service].Handle(curUser, msgData)}
+                                };
+                                if (response.Count > 0)
+                                {
+                                    string retData = JsonConvert.SerializeObject(response);
+                                    return retData;
+                                }
+                        }   
                     }
                 }
             }
             catch (Exception ex)
             {
+                Console.WriteLine("Error: " + ex.Message);
             }
 
-            if(response.Count > 0)
-            {
-                string retData = JsonConvert.SerializeObject(response);
-                curUser.SendMessage(retData);
-            }
 
             await Task.Delay(500);
 
