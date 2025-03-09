@@ -43,16 +43,35 @@ namespace TicTacToeGameServer.Models
 
             foreach(string userId in matchData.PlayersData.Keys)
             {
-                User user = sessionManager.GetUser(userId);
-                if (user != null)
-                {
-                    user.CurUserState = User.UserState.Playing;
-                    user.MatchId = _matchId;
-                    _sessionManager.UpdateUser(user);
+               JoinRoom(userId);
+            }
+        }
 
-                    _playersOrder.Add(userId);
-                    _users.Add(userId, user);
-                }
+        public void JoinRoom(string userId)
+        {
+            User user = _sessionManager.GetUser(userId);
+            if (user != null)
+            {
+                user.CurUserState = User.UserState.Playing;
+                user.MatchId = _matchId;
+                _sessionManager.UpdateUser(user);
+
+                _playersOrder.Add(userId);
+                _users.Add(userId, user);
+            }
+        }
+
+        public void LeaveRoom(string userId)
+        {
+            User user = _sessionManager.GetUser(userId);
+            if (user != null)
+            {
+                user.CurUserState = User.UserState.Idle;
+                user.MatchId = "";
+                _sessionManager.UpdateUser(user);
+
+                _playersOrder.Remove(userId);
+                _users.Remove(userId);
             }
         }
 

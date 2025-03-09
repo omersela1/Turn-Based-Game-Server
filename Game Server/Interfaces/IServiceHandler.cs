@@ -4,7 +4,7 @@ namespace TicTacToeGameServer.Interfaces
 {
     public interface IServiceHandler
     {
-        string ServiceName { get; }
-        object Handle(User user, Dictionary<string, object> details);
+        public string ServiceName { get; }
+        public List<Dictionary<string, object>> Handle(User user, Dictionary<string, object> details);
     }
 }

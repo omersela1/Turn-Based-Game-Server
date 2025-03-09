@@ -26,7 +26,13 @@ namespace TicTacToeGameServer.Services.Redis
 
         public string GetGamesOpenedAmount()
         {
-            return _redisBaseService.GetString("GamesOpenedAmount");
+            string currentAmount = _redisBaseService.GetString("GamesOpenedAmount");
+            if (currentAmount == null)
+            {
+                _redisBaseService.SetString("GamesOpenedAmount", "0");
+                return "0";
+            }
+            return currentAmount;
         }
     }
 }

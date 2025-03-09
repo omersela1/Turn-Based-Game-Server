@@ -21,6 +21,7 @@ namespace TicTacToeGameServer.Handlers
         }
         protected override void OnMessage(MessageEventArgs e)
         {
+            Console.WriteLine("On message MultiHandler " + ID);
             _processRequest.ProcessMessageAsync(Sessions[ID], e.Data);
         }
 

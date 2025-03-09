@@ -18,7 +18,7 @@ namespace TicTacToeGameServer.Managers
 
         public void AddRoom(string matchId,GameRoom gameRoom)
         {
-            if (_activeRooms != null)
+            if (_activeRooms == null)
                 _activeRooms = new Dictionary<string, GameRoom>();
 
             if(_activeRooms.ContainsKey(matchId))

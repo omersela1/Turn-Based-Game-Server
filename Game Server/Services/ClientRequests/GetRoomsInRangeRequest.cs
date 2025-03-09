@@ -16,13 +16,9 @@ namespace TicTacToeGameServer.Services.ClientRequests
             _roomManager = roomManager;
         }
 
-        public object Handle(User user, Dictionary<string, object> details)
+        public List<Dictionary<string, object>> Handle(User user, Dictionary<string, object> details)
         {
-            Dictionary<string, object> response = new Dictionary<string, object> {
-                { "Response", ServiceName },
-                { "Rooms", _roomManager.ActiveRooms.Values.Select(room => room.ConvertToDictionary()).ToList() }
-            };
-            return response;
+            return _roomManager.ActiveRooms.Values.Select(room => room.ConvertToDictionary()).ToList();
         }
     }
 }

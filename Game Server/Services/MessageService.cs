@@ -29,29 +29,54 @@ namespace TicTacToeGameServer.Services
         public async Task<object> HandleMessageAsync(User curUser, string data)
         {
             Console.WriteLine("MessageService: HandleMessageAsync");
+            Console.WriteLine("Data: " + data);
             try
             {
                 if(curUser != null)
                 {
+                    if (string.IsNullOrEmpty(data))
+                    {
+                        Console.WriteLine("Data is null");
+                        return null;
+                    }
                     Dictionary<string,object> msgData = JsonConvert.DeserializeObject<Dictionary<string,object>>(data);
                     if(msgData.ContainsKey("Service"))
                     {
                         string service = msgData["Service"].ToString();
+                        Console.WriteLine("Required service: " + service);
                         if(_services.ContainsKey(service))
                         {
-                           Dictionary<string,object> response = new Dictionary<string,object>
-                                {
-                                    {"Response", service },
-                                    {"Rooms", (Dictionary<string,object>)_services[service].Handle(curUser, msgData)}
-                                };
+                           var serviceResponse = _services[service].Handle(curUser, msgData);
+                           if (serviceResponse != null) {
+                            Dictionary<string,object> response = new Dictionary<string,object>();
+                            response.Add("Response", service);
+                                switch (service) {
+                                    case "GetRoomsInRange":
+                                      response.Add("Rooms", serviceResponse);
+                                      break;
+                                    case "CreateTurnRoom":
+                                        response.Add("RoomId", serviceResponse[0]["RoomId"]);
+                                        response.Add("isSuccess", serviceResponse[0]["isSuccess"]);
+                                        break;
+                                        default:
+                                        break;
+                                }
                                 if (response.Count > 0)
                                 {
+                                    Console.WriteLine("Response received from service: " + service);
                                     string retData = JsonConvert.SerializeObject(response);
                                     return retData;
                                 }
+                                }
+                           else
+                           {
+                               Console.WriteLine(service + " response is null");
+                               return null;
+                           }
+                           }
                         }   
                     }
-                }
+                Console.WriteLine("User is null");
             }
             catch (Exception ex)
             {
