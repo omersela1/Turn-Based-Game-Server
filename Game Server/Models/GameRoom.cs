@@ -114,6 +114,10 @@ namespace TicTacToeGameServer.Models
             {
                 { "MatchId", _matchId },
                 { "IsRoomActive", _isRoomActive },
+                { "Name", Name },
+                { "Owner", Owner },
+                { "MaxUsersCount", MaxUsersCount },
+                { "JoinedUsersCount", JoinedUsersCount },
                 { "MoveCounter", _moveCounter },
                 { "TurnIndex", _turnIndex },
                 { "TurnTime", _turnTime },
