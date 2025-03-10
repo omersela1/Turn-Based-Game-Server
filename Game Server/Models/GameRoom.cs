@@ -112,7 +112,7 @@ namespace TicTacToeGameServer.Models
         {
             return new Dictionary<string, object>
             {
-                { "MatchId", _matchId },
+                { "RoomId", _matchId },
                 { "IsRoomActive", _isRoomActive },
                 { "Name", Name },
                 { "Owner", Owner },
