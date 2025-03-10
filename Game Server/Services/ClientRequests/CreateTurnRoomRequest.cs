@@ -12,16 +12,21 @@ namespace TicTacToeGameServer.Services.ClientRequests {
 
         private readonly IGamesOpenedAmountRedisService _gamesOpenedAmountRedisService;
 
+        private readonly IMatchIdRedisService _matchIdRedisService;
+
         private readonly IdToUserIdManager _idToUserIdManager;
 
         public string ServiceName => "CreateTurnRoom";
 
         public CreateTurnRoomRequest(ICreateRoomService createRoomService, 
         IRatingRedisService ratingRedisService, 
-        IGamesOpenedAmountRedisService gamesOpenedAmountRedisService, IdToUserIdManager idToUserIdManager) {
+        IGamesOpenedAmountRedisService gamesOpenedAmountRedisService, 
+        IMatchIdRedisService matchIdRedisService, 
+        IdToUserIdManager idToUserIdManager) {
             _createRoomService = createRoomService;
             _ratingRedisService = ratingRedisService;
             _gamesOpenedAmountRedisService = gamesOpenedAmountRedisService;
+            _matchIdRedisService = matchIdRedisService;
             _idToUserIdManager = idToUserIdManager;
         }
 
@@ -35,19 +40,36 @@ namespace TicTacToeGameServer.Services.ClientRequests {
 
             // create the match data
             _gamesOpenedAmountRedisService.IncrementGamesOpenedAmount();
-            string matchIdString = _gamesOpenedAmountRedisService.GetGamesOpenedAmount();
-            Console.WriteLine("MatchIdString: " + matchIdString);
-            int matchId = int.Parse(matchIdString);
+            int matchId = int.Parse(_matchIdRedisService.GetMatchId()) + 1;
+            Console.WriteLine("MatchId: " + matchId);
             List<SearchData> searchDataList = new List<SearchData> { roomCreatorSearchData };
             MatchData matchData = new MatchData(matchId, searchDataList);
 
+            string roomName = details["Name"].ToString();
+            int maxUsers = int.Parse(details["MaxUsers"].ToString());
+            Console.WriteLine("RoomName: " + roomName);
+            Console.WriteLine("MaxUsers: " + maxUsers);
+
             // create the room
-            string roomId = _createRoomService.Create(matchData)["MatchId"].ToString();
-            Dictionary<string, object> roomData = new Dictionary<string, object> {
-                { "RoomId", roomId },
-                { "isSuccess", true }
-            };
-            return new List<Dictionary<string, object>> { roomData };
+            var createRoomResponse = _createRoomService.Create(
+                     matchData, roomName, creatorId, maxUsers);
+            if ((createRoomResponse.TryGetValue("MatchId", out var receivedRoomId)) && receivedRoomId != null)
+            {
+                string roomId = receivedRoomId.ToString();
+                Dictionary<string, object> roomData = new Dictionary<string, object> {
+                    { "RoomId", roomId },
+                    { "isSuccess", true }
+                };
+                return new List<Dictionary<string, object>> { roomData };
+            }
+            else
+            {
+                Dictionary<string, object> roomData = new Dictionary<string, object> {
+                    { "RoomId", null },
+                    { "isSuccess", false }
+                };
+                return new List<Dictionary<string, object>> { roomData };
+            }
         }
     }
 }

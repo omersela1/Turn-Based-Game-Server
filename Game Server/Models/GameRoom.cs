@@ -8,21 +8,38 @@ namespace TicTacToeGameServer.Models
     public class GameRoom
     {
         private string _matchId;
+
+        private string _roomName;
+        public string Name { get => _roomName; set => _roomName = value; }
+
+        private string _owner;
+
+        public string Owner { get => _owner; set => _owner = value; }
+
+        private int _maxUsers;
+
+        public int MaxUsersCount { get => _maxUsers; set => _maxUsers = value; }
         private SessionManager _sessionManager;
         private RoomsManager _roomManager;
         private IRandomizerService _randomizerService;
         private IDateTimeService _dateTimeService;
 
         private bool _isRoomActive = false;
+
+        public bool IsRoomActive { get => _isRoomActive; }
         private bool _isDestroyThread = false;
         private int _moveCounter = 0;
         private int _turnIndex = 0;
         private int _turnTime = 30;
+
+        public int TurnTime { get => _turnTime; }
         private int _timeOutTime = 360;
         private RoomTime roomTime;
 
         private List<string> _playersOrder;
         private Dictionary<string,User> _users;
+
+        public int JoinedUsersCount { get => _users.Count; }
 
         public GameRoom(string matchId, SessionManager sessionManager, RoomsManager roomManager,
            IRandomizerService randomizerService,IDateTimeService dateTimeService, 
@@ -50,7 +67,7 @@ namespace TicTacToeGameServer.Models
         public void JoinRoom(string userId)
         {
             User user = _sessionManager.GetUser(userId);
-            if (user != null)
+            if (user != null && !_users.ContainsKey(userId))
             {
                 user.CurUserState = User.UserState.Playing;
                 user.MatchId = _matchId;
@@ -59,6 +76,22 @@ namespace TicTacToeGameServer.Models
                 _playersOrder.Add(userId);
                 _users.Add(userId, user);
             }
+            if (user != null && _users.ContainsKey(userId))
+                Console.WriteLine("User already in room");
+        }
+
+        public void SubscribeRoom(string userId)
+        {
+            // User user = _sessionManager.GetUser(userId);
+            // if (user != null && !_users.ContainsKey(userId))
+            // {
+            //     user.CurUserState = User.UserState.Idle;
+            //     user.MatchId = _matchId;
+            //     _sessionManager.UpdateUser(user);
+
+            //     _playersOrder.Add(userId);
+            //     _users.Add(userId, user);
+            // }
         }
 
         public void LeaveRoom(string userId)
@@ -138,13 +171,13 @@ namespace TicTacToeGameServer.Models
 
             Dictionary<string, object> sendData = new Dictionary<string, object>()
             {
-                { "Service","StartGame"},
-                { "MI",_matchId},
-                { "TT",_dateTimeService.GetUtcTime()},
-                { "MTT",_turnTime},
-                { "CP",_playersOrder[_turnIndex]},
-                { "Players",_playersOrder},
-                { "MC",_moveCounter}
+                { "Service","StartGame" },
+                { "MI",_matchId },
+                { "TT",_dateTimeService.GetUtcTime() },
+                { "MTT",_turnTime },
+                { "CP",_playersOrder[_turnIndex] },
+                { "Players",_playersOrder },
+                { "MC",_moveCounter }
             };
 
             string toSend = JsonConvert.SerializeObject(sendData);
@@ -174,6 +207,11 @@ namespace TicTacToeGameServer.Models
         {
             foreach (string userId in _users.Keys)
                 _users[userId].SendMessage(toSend);
+        }
+
+        public bool IsUserInRoom(string userId)
+        {
+            return _users.ContainsKey(userId);
         }
 
     }

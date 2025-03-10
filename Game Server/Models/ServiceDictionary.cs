@@ -1,6 +1,7 @@
 using TicTacToeGameServer.Interfaces;
 using TicTacToeGameServer.Managers;
 using TicTacToeGameServer.Services;
+using TicTacToeGameServer.Services.Redis;
 using TicTacToeGameServer.Services.ClientRequests;
 using System.Collections.Generic;
 
@@ -13,10 +14,14 @@ namespace TicTacToeGameServer.Models
         ICreateRoomService createRoomService, 
         IRatingRedisService ratingRedisService, 
         IGamesOpenedAmountRedisService gamesOpenedAmountRedisService,
+        IMatchIdRedisService matchIdRedisService,
         IdToUserIdManager idToUserIdManager)
         {
             Add("GetRoomsInRange", new GetRoomsInRangeRequest(roomManager));
-            Add("CreateTurnRoom", new CreateTurnRoomRequest(createRoomService, ratingRedisService, gamesOpenedAmountRedisService, idToUserIdManager));
+            Add("CreateTurnRoom", new CreateTurnRoomRequest(createRoomService, ratingRedisService, gamesOpenedAmountRedisService, matchIdRedisService, idToUserIdManager));
+            Add("JoinRoom", new JoinRoomRequest(roomManager));
+            Add("SubscribeRoom", new SubscribeRoomRequest(roomManager));
+            Add("StartGame", new StartGameRequest(roomManager));
         }   
     }
 

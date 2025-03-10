@@ -56,7 +56,18 @@ namespace TicTacToeGameServer.Services
                                       break;
                                     case "CreateTurnRoom":
                                         response.Add("RoomId", serviceResponse[0]["RoomId"]);
-                                        response.Add("isSuccess", serviceResponse[0]["isSuccess"]);
+                                        response.Add("IsSuccess", serviceResponse[0]["isSuccess"]);
+                                        break;
+
+                                    case "JoinRoom":
+                                        response.Add("RoomId", serviceResponse[0]["RoomId"]);
+                                        response.Add("IsSuccess", serviceResponse[0]["isSuccess"]);
+                                        break;
+                                    case "SubscribeRoom":
+                                        response.Add("RoomId", serviceResponse[0]["RoomId"]);
+                                        response.Add("IsSuccess", serviceResponse[0]["isSuccess"]);
+                                        break;
+                                    case "StartGame":
                                         break;
                                         default:
                                         break;
