@@ -130,7 +130,7 @@ namespace TicTacToeGameServer.Models
                 { "TurnTime", _turnTime },
                 { "TimeOutTime", _timeOutTime },
                 { "PlayersOrder", _playersOrder },
-                { "Users", _users.Keys.ToList() }
+                { "Users", _users.Keys.Cast<object>().ToList() }
             };
         }
 

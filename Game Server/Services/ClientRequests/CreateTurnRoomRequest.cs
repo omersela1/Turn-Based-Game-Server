@@ -50,12 +50,24 @@ namespace TicTacToeGameServer.Services.ClientRequests {
             int maxUsers = int.Parse(details["MaxUsers"].ToString());
             string password = null;
             
-            if (details.TryGetValue("TableProperties", out var tablePropertiesObj) && tablePropertiesObj is JObject tablePropertiesJObject)
+           if (details.TryGetValue("TableProperties", out var tablePropertiesObj))
             {
-                var tableProperties = tablePropertiesJObject.ToObject<Dictionary<string, object>>();
-                if (tableProperties.TryGetValue("Password", out var passwordObj))
+                if (tablePropertiesObj is Dictionary<string, object> tablePropertiesDict)
                 {
-                    password = passwordObj.ToString();
+                     // Already a Dictionary
+                    if (tablePropertiesDict.TryGetValue("Password", out var passwordObj))
+                    {
+                         password = passwordObj?.ToString();
+                    }
+                }
+                else if (tablePropertiesObj is JObject tablePropertiesJObject)
+                {
+                     // Convert from JObject to Dictionary
+                     var tablePropertiesDictionary = tablePropertiesJObject.ToObject<Dictionary<string, object>>();
+                    if (tablePropertiesDictionary.TryGetValue("Password", out var passwordObj))
+                    {
+                         password = passwordObj?.ToString();
+                    }
                 }
             }
             if (password != null) {

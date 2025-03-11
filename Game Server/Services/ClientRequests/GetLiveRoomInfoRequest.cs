@@ -24,11 +24,14 @@ namespace TicTacToeGameServer.Services.ClientRequests
             Console.WriteLine("GetLiveRoomInfoRequest: Handle");
             Console.WriteLine("RoomId: " + _currentRoomId);
             GameRoom room = _roomManager.GetRoom(_currentRoomId);
+            Dictionary<string, object> roomProperties = new Dictionary<string, object>
+            {
+                { "Password", room.Password }
+            };
             Dictionary<string, object> responseDictionary = new Dictionary<string, object>
             {
                 { "RoomData", room.ConvertToDictionary() },
-                { "RoomProperties", room.Password },
-                { "Users", room.Users }
+                { "RoomProperties", roomProperties }
             };
             return new List<Dictionary<string, object>> { responseDictionary };
         }

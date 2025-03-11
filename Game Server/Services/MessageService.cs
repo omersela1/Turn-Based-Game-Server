@@ -1,9 +1,11 @@
 ﻿using Newtonsoft.Json;
+using System.Net;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using TicTacToeGameServer.Interfaces;
 using TicTacToeGameServer.Models;
 using TicTacToeGameServer.Services.ClientRequests;
+using TicTacToeGameServer.Services.SerializationResolution;
 
 namespace TicTacToeGameServer.Services
 {
@@ -55,9 +57,10 @@ namespace TicTacToeGameServer.Services
                                       response.Add("Rooms", serviceResponse);
                                       break;
                                     case "GetLiveRoomInfo":
-                                        response.Add("RoomData", serviceResponse[0]["RoomData"]);
+                                        Dictionary<string, object> roomData = (Dictionary<string, object>)serviceResponse[0]["RoomData"];
+                                        response.Add("RoomData", roomData);
                                         response.Add("RoomProperties", serviceResponse[0]["RoomProperties"]);
-                                        response.Add("Users", serviceResponse[0]["Users"]);
+                                        response.Add("Users", roomData["Users"]);
                                         break;
                                     case "CreateTurnRoom":
                                         response.Add("RoomId", serviceResponse[0]["RoomId"]);
@@ -80,7 +83,9 @@ namespace TicTacToeGameServer.Services
                                 if (response.Count > 0)
                                 {
                                     Console.WriteLine("Response received from service: " + service);
-                                    string retData = JsonConvert.SerializeObject(response);
+                                    // JsonSerializerSettings settings = new JsonSerializerSettings();
+                                    // settings.Converters.Add(new CustomJsonConverter());
+                                    string retData = JsonConvert.SerializeObject(response); // add settings as second parameter if needed
                                     return retData;
                                 }
                                 }
@@ -97,6 +102,7 @@ namespace TicTacToeGameServer.Services
             catch (Exception ex)
             {
                 Console.WriteLine("Error: " + ex.Message);
+                // Console.WriteLine("Stack Trace: " + ex.StackTrace);
             }
 
 
