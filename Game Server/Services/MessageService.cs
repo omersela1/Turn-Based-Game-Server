@@ -54,6 +54,11 @@ namespace TicTacToeGameServer.Services
                                     case "GetRoomsInRange":
                                       response.Add("Rooms", serviceResponse);
                                       break;
+                                    case "GetLiveRoomInfo":
+                                        response.Add("RoomData", serviceResponse[0]["RoomData"]);
+                                        response.Add("RoomProperties", serviceResponse[0]["RoomProperties"]);
+                                        response.Add("Users", serviceResponse[0]["Users"]);
+                                        break;
                                     case "CreateTurnRoom":
                                         response.Add("RoomId", serviceResponse[0]["RoomId"]);
                                         response.Add("IsSuccess", serviceResponse[0]["isSuccess"]);

@@ -19,6 +19,10 @@ namespace TicTacToeGameServer.Models
         private int _maxUsers;
 
         public int MaxUsersCount { get => _maxUsers; set => _maxUsers = value; }
+
+        private string _password;
+
+        public string Password { get => _password; set => _password = value; }
         private SessionManager _sessionManager;
         private RoomsManager _roomManager;
         private IRandomizerService _randomizerService;
@@ -38,6 +42,8 @@ namespace TicTacToeGameServer.Models
 
         private List<string> _playersOrder;
         private Dictionary<string,User> _users;
+
+        public Dictionary<string, User> Users { get => _users; }
 
         public int JoinedUsersCount { get => _users.Count; }
 
@@ -116,6 +122,7 @@ namespace TicTacToeGameServer.Models
                 { "IsRoomActive", _isRoomActive },
                 { "Name", Name },
                 { "Owner", Owner },
+                { "Password", Password },
                 { "MaxUsersCount", MaxUsersCount },
                 { "JoinedUsersCount", JoinedUsersCount },
                 { "MoveCounter", _moveCounter },

@@ -18,6 +18,7 @@ namespace TicTacToeGameServer.Models
         IdToUserIdManager idToUserIdManager)
         {
             Add("GetRoomsInRange", new GetRoomsInRangeRequest(roomManager));
+            Add("GetLiveRoomInfo", new GetLiveRoomInfoRequest(roomManager));
             Add("CreateTurnRoom", new CreateTurnRoomRequest(createRoomService, ratingRedisService, gamesOpenedAmountRedisService, matchIdRedisService, idToUserIdManager));
             Add("JoinRoom", new JoinRoomRequest(roomManager));
             Add("SubscribeRoom", new SubscribeRoomRequest(roomManager));

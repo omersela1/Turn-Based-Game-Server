@@ -3,6 +3,7 @@ using TicTacToeGameServer.Interfaces;
 using TicTacToeGameServer.Managers;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace TicTacToeGameServer.Services.ClientRequests {
     public class CreateTurnRoomRequest : IServiceHandler {
@@ -47,12 +48,25 @@ namespace TicTacToeGameServer.Services.ClientRequests {
 
             string roomName = details["Name"].ToString();
             int maxUsers = int.Parse(details["MaxUsers"].ToString());
+            string password = null;
+            
+            if (details.TryGetValue("TableProperties", out var tablePropertiesObj) && tablePropertiesObj is JObject tablePropertiesJObject)
+            {
+                var tableProperties = tablePropertiesJObject.ToObject<Dictionary<string, object>>();
+                if (tableProperties.TryGetValue("Password", out var passwordObj))
+                {
+                    password = passwordObj.ToString();
+                }
+            }
+            if (password != null) {
+          
             Console.WriteLine("RoomName: " + roomName);
+            Console.WriteLine("Password: " + password);
             Console.WriteLine("MaxUsers: " + maxUsers);
 
             // create the room
             var createRoomResponse = _createRoomService.Create(
-                     matchData, roomName, creatorId, maxUsers);
+                     matchData, roomName, creatorId, maxUsers, password);
             if ((createRoomResponse.TryGetValue("MatchId", out var receivedRoomId)) && receivedRoomId != null)
             {
                 string roomId = receivedRoomId.ToString();
@@ -65,10 +79,22 @@ namespace TicTacToeGameServer.Services.ClientRequests {
             else
             {
                 Dictionary<string, object> roomData = new Dictionary<string, object> {
+                    { "ErrorMessage", "Failed to create room" },
                     { "RoomId", null },
                     { "isSuccess", false }
                 };
                 return new List<Dictionary<string, object>> { roomData };
+            }
+        }
+            else
+            {
+                Dictionary<string, object> roomData = new Dictionary<string, object> {
+                    { "ErrorMessage", "Password is null" },
+                    { "RoomId", null },
+                    { "isSuccess", false }
+                };
+                return new List<Dictionary<string, object>> { roomData };
+              
             }
         }
     }

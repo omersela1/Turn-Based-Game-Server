@@ -26,16 +26,16 @@ namespace TicTacToeGameServer.Services
         }
 
         public Dictionary<string, object> Create(MatchData curMatchData, 
-        string roomName, string owner, int maxUsers)
+        string roomName, string owner, int maxUsers, string password)
         {
             return new Dictionary<string, object>()
             {
                 { "Service","StartMatch"},
-                { "MatchId",CreateRoom(curMatchData, roomName, owner, maxUsers)}
+                { "MatchId",CreateRoom(curMatchData, roomName, owner, maxUsers, password)}
             };
         }
 
-        private object CreateRoom(MatchData curMatchData, string roomName, string owner, int maxUsers)
+        private object CreateRoom(MatchData curMatchData, string roomName, string owner, int maxUsers, string password)
         {
             try
             {
@@ -54,6 +54,7 @@ namespace TicTacToeGameServer.Services
                     _roomsManager.AddRoom(dbMatchId.ToString(), gameRoom);
                     gameRoom.Name = roomName;
                     gameRoom.Owner = owner;
+                    gameRoom.Password = password;
                     gameRoom.MaxUsersCount = maxUsers;
                     gameRoom.StartGame();
                 }
