@@ -41,6 +41,7 @@ namespace TicTacToeGameServer.Models
         private RoomTime roomTime;
 
         private List<string> _playersOrder;
+
         private Dictionary<string,User> _users;
 
         public Dictionary<string, User> Users { get => _users; }
@@ -73,6 +74,10 @@ namespace TicTacToeGameServer.Models
         public void JoinRoom(string userId)
         {
             User user = _sessionManager.GetUser(userId);
+            if (user != null && _users.ContainsKey(userId)) {
+                Console.WriteLine("User already in room");
+                return;
+            }
             if (user != null && !_users.ContainsKey(userId))
             {
                 user.CurUserState = User.UserState.Playing;
@@ -82,8 +87,6 @@ namespace TicTacToeGameServer.Models
                 _playersOrder.Add(userId);
                 _users.Add(userId, user);
             }
-            if (user != null && _users.ContainsKey(userId))
-                Console.WriteLine("User already in room");
         }
 
         public void SubscribeRoom(string userId)
