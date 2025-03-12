@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TicTacToeGameServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+698f0730a1ef36e6250ddc58b52c87d954f3fb33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b439738fde21d6406ca819d0d2edc82d0ba54bfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("TicTacToeGameServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TicTacToeGameServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

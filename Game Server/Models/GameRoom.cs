@@ -189,18 +189,20 @@ namespace TicTacToeGameServer.Models
         #endregion
 
         #region Logic
-        public void StartGame()
+        public void StartGame(string senderId)
         {
             _turnIndex = _randomizerService.GetRandomNumber(0, 1);
 
             Dictionary<string, object> sendData = new Dictionary<string, object>()
             {
-                { "Service","StartGame" },
-                { "MI",_matchId },
+                { "Service","StartGame"},
+                { "Sender", senderId },
+                { "RoomId",_matchId },
+                { "NextTurn", _playersOrder[_turnIndex] },
+                { "TurnsList", _playersOrder },
+                { "TurnTime", _turnTime },
+                { "TimeOutTime", _timeOutTime },
                 { "TT",_dateTimeService.GetUtcTime() },
-                { "MTT",_turnTime },
-                { "CP",_playersOrder[_turnIndex] },
-                { "Players",_playersOrder },
                 { "MC",_moveCounter }
             };
 

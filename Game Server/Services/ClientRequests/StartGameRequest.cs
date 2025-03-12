@@ -17,22 +17,33 @@ namespace TicTacToeGameServer.Services.ClientRequests {
         public List<Dictionary<string, object>> Handle(User user, Dictionary<string, object> details) {
             // prepare the data
             string senderId = user.UserId;
-            string roomId = details["MatchId"].ToString();
-            Console.WriteLine("StartGameRequest: Handle");
-            Console.WriteLine("Sender: " + senderId);
-            Console.WriteLine("RoomId: " + roomId);
-            // start the game
-            _roomManager.GetRoom(roomId).StartGame();
+            string roomId = _roomManager.GetCurrentUserRoom(senderId);
+            if (roomId != null && roomId != string.Empty) {
+                Console.WriteLine("StartGameRequest: Handle");
+                Console.WriteLine("Sender: " + senderId);
+                Console.WriteLine("RoomId: " + roomId);
+                // start the game
+                _roomManager.GetRoom(roomId).StartGame(senderId);
+                // return result
+                return new List<Dictionary<string, object>> {
+                    new Dictionary<string, object> {
+                        { "isSuccess", _roomManager.GetRoom(roomId).IsRoomActive },
+                        { "Sender", senderId },
+                        { "RoomId", roomId }
+                    }
+                };
 
-            // return result
-
-            return new List<Dictionary<string, object>> {
-                new Dictionary<string, object> {
-                    { "isSuccess", _roomManager.GetRoom(roomId).IsRoomActive },
-                    { "Sender", senderId },
-                    { "RoomId", roomId }
-                }
-            };
+            }
+            else {
+                return new List<Dictionary<string, object>> {
+                    new Dictionary<string, object> {
+                        { "isSuccess", false },
+                        { "Sender", senderId },
+                        { "ErrorMessage", senderId + " is not in a room"}
+                    }
+                };
+            }
         }
     }
 }
+

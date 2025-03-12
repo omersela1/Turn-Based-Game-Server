@@ -8,12 +8,15 @@ namespace TicTacToeGameServer.Managers
         private Dictionary<string, GameRoom> _activeRooms;
         public Dictionary<string, GameRoom> ActiveRooms { get => _activeRooms; }
 
+        private Dictionary<string, string> _currentUsersInRooms;
+
         private readonly IGamesOpenedAmountRedisService _gamesOpenedAmountRedisService;
 
         public RoomsManager(IGamesOpenedAmountRedisService gamesOpenedAmountRedisService) 
         { 
             _activeRooms = new Dictionary<string, GameRoom>();
             _gamesOpenedAmountRedisService = gamesOpenedAmountRedisService;
+            _currentUsersInRooms = new Dictionary<string, string>();
         }
 
         public void AddRoom(string matchId,GameRoom gameRoom)
@@ -51,6 +54,26 @@ namespace TicTacToeGameServer.Managers
         public int GetRoomsCount()
         {
             return _activeRooms.Count;
+        }
+
+        public void UserToRoom(string usedId, string matchId)
+        {
+            if(_currentUsersInRooms.ContainsKey(usedId))
+                _currentUsersInRooms[usedId] = matchId;
+            else _currentUsersInRooms.Add(usedId,matchId);
+        }
+
+        public void RemoveUserFromRoom(string userId)
+        {
+            if(_currentUsersInRooms.ContainsKey(userId))
+                _currentUsersInRooms[userId] = string.Empty;
+        }
+
+        public string GetCurrentUserRoom(string userId)
+        {
+            if(_currentUsersInRooms.ContainsKey(userId))
+                return _currentUsersInRooms[userId];
+            return string.Empty;
         }
     }
 }

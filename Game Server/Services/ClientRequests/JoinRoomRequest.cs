@@ -22,8 +22,9 @@ namespace TicTacToeGameServer.Services.ClientRequests {
             Console.WriteLine("Sender: " + senderId);
             Console.WriteLine("RoomId: " + roomId);
             
+            // join the room
             _roomManager.GetRoom(roomId).JoinRoom(senderId);
-
+            _roomManager.UserToRoom(senderId, roomId);
             // return result
 
             return new List<Dictionary<string, object>> {

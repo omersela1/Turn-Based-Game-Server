@@ -12,7 +12,6 @@ namespace TicTacToeGameServer.Services
     public class MessageService : IMessageService
     {
 
-        private Dictionary<string, string> _currentUsersInRooms;
         private readonly IReadyToPlayService _readyToPlayService;
         private readonly ISendMoveRequest _sendMoveRequest;
         private readonly IStopGameRequest _stopGameRequest;
@@ -27,7 +26,6 @@ namespace TicTacToeGameServer.Services
             _sendMoveRequest = sendMoveRequest;
             _stopGameRequest =  stopGameRequest;
             _services = services;
-            _currentUsersInRooms = new Dictionary<string, string>();
         }
 
         public async Task<object> HandleMessageAsync(User curUser, string data)
@@ -50,9 +48,6 @@ namespace TicTacToeGameServer.Services
                         Console.WriteLine("Required service: " + service);
                         if(_services.ContainsKey(service))
                         {
-                            if (service == "StartGame") {
-                                msgData.Add("MatchId", _currentUsersInRooms[curUser.UserId]);
-                            }
                            var serviceResponse = _services[service].Handle(curUser, msgData);
                            if (serviceResponse != null) {
                             Dictionary<string,object> response = new Dictionary<string,object>();
@@ -76,13 +71,17 @@ namespace TicTacToeGameServer.Services
                                         response.Add("RoomId", serviceResponse[0]["RoomId"]);
                                         response.Add("IsSuccess", serviceResponse[0]["isSuccess"]);
                                         response.Add("UserId", serviceResponse[0]["Sender"]);
-                                        _currentUsersInRooms.Add(curUser.UserId, serviceResponse[0]["RoomId"].ToString());
                                         break;
                                     case "SubscribeRoom":
                                         response.Add("RoomId", serviceResponse[0]["RoomId"]);
                                         response.Add("IsSuccess", serviceResponse[0]["isSuccess"]);
                                         break;
                                     case "StartGame":
+                                        if (!(bool)serviceResponse[0]["isSuccess"])
+                                        {
+                                            Console.WriteLine("Failed to start game");
+                                            response.Add("ErrorMessage", serviceResponse[0]["ErrorMessage"]);
+                                        }
                                         break;
                                         default:
                                         break;
