@@ -56,7 +56,7 @@ namespace TicTacToeGameServer.Services
                     gameRoom.Owner = owner;
                     gameRoom.Password = password;
                     gameRoom.MaxUsersCount = maxUsers;
-                    gameRoom.StartGame();
+                    // gameRoom.StartGame();
                 }
 
                 return dbMatchId.ToString();

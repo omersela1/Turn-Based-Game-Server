@@ -70,6 +70,7 @@ namespace TicTacToeGameServer.Services
                                     case "JoinRoom":
                                         response.Add("RoomId", serviceResponse[0]["RoomId"]);
                                         response.Add("IsSuccess", serviceResponse[0]["isSuccess"]);
+                                        response.Add("UserId", serviceResponse[0]["Sender"]);
                                         break;
                                     case "SubscribeRoom":
                                         response.Add("RoomId", serviceResponse[0]["RoomId"]);

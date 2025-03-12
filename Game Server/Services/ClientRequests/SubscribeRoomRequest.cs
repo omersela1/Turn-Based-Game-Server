@@ -28,7 +28,7 @@ namespace TicTacToeGameServer.Services.ClientRequests {
 
             return new List<Dictionary<string, object>> {
                 new Dictionary<string, object> {
-                    { "isSuccess", _roomManager.GetRoom(roomId).IsUserInRoom(senderId) },
+                    { "isSuccess", _roomManager.GetRoom(roomId).IsUserSubscribed(senderId) },
                     { "Sender", senderId },
                     { "RoomId", roomId }
                 }

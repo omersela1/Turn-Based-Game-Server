@@ -46,6 +46,10 @@ namespace TicTacToeGameServer.Models
 
         public Dictionary<string, User> Users { get => _users; }
 
+        private Dictionary<string, User> _subscribedUsers;
+
+        public Dictionary<string, User> SubscribedUsers { get => _subscribedUsers; }
+
         public int JoinedUsersCount { get => _users.Count; }
 
         public GameRoom(string matchId, SessionManager sessionManager, RoomsManager roomManager,
@@ -61,14 +65,9 @@ namespace TicTacToeGameServer.Models
             _moveCounter = 0;
             _turnIndex = 0;
             roomTime = new RoomTime(_turnTime, _timeOutTime);
-
             _playersOrder = new List<string>();
             _users = new Dictionary<string, User>();
-
-            foreach(string userId in matchData.PlayersData.Keys)
-            {
-               JoinRoom(userId);
-            }
+            _subscribedUsers = new Dictionary<string, User>();
         }
 
         public void JoinRoom(string userId)
@@ -78,29 +77,40 @@ namespace TicTacToeGameServer.Models
                 Console.WriteLine("User already in room");
                 return;
             }
-            if (user != null && !_users.ContainsKey(userId))
+            if (_users.Count == _maxUsers)
             {
+                Console.WriteLine("Room " + _roomName + " is full");
+                return;
+            }
+            if (user != null && !_users.ContainsKey(userId) && _users.Count < _maxUsers)
+            {
+                // join room
                 user.CurUserState = User.UserState.Playing;
                 user.MatchId = _matchId;
                 _sessionManager.UpdateUser(user);
 
                 _playersOrder.Add(userId);
                 _users.Add(userId, user);
+
+                // notify subscribed users
+                Dictionary<string, object> notifySubscribed = new Dictionary<string, object>()
+                {
+                    { "Service","UserJoinRoom" },
+                    { "RoomData", ConvertToDictionary() },
+                    { "IsSuccess",true },
+                    { "UserId", userId }
+                };
+                BroadcastToRoom(JsonConvert.SerializeObject(notifySubscribed));
             }
         }
 
         public void SubscribeRoom(string userId)
         {
-            // User user = _sessionManager.GetUser(userId);
-            // if (user != null && !_users.ContainsKey(userId))
-            // {
-            //     user.CurUserState = User.UserState.Idle;
-            //     user.MatchId = _matchId;
-            //     _sessionManager.UpdateUser(user);
-
-            //     _playersOrder.Add(userId);
-            //     _users.Add(userId, user);
-            // }
+            User user = _sessionManager.GetUser(userId);
+            if (user != null)
+            {
+                _subscribedUsers.Add(userId, user);
+            }
         }
 
         public void LeaveRoom(string userId)
@@ -219,8 +229,8 @@ namespace TicTacToeGameServer.Models
 
         private void BroadcastToRoom(string toSend)
         {
-            foreach (string userId in _users.Keys)
-                _users[userId].SendMessage(toSend);
+            foreach (string userId in _subscribedUsers.Keys)
+                _subscribedUsers[userId].SendMessage(toSend);
         }
 
         public bool IsUserInRoom(string userId)
@@ -228,5 +238,10 @@ namespace TicTacToeGameServer.Models
             return _users.ContainsKey(userId);
         }
 
+        public bool IsUserSubscribed(string userId)
+        {
+            return _subscribedUsers.ContainsKey(userId);
+
+        }
     }
 }
