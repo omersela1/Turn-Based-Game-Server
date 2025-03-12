@@ -17,7 +17,7 @@ namespace TicTacToeGameServer.Services.ClientRequests {
         public List<Dictionary<string, object>> Handle(User user, Dictionary<string, object> details) {
             // prepare the data
             string senderId = user.UserId;
-            string roomId = details["MI"].ToString();
+            string roomId = details["MatchId"].ToString();
             Console.WriteLine("StartGameRequest: Handle");
             Console.WriteLine("Sender: " + senderId);
             Console.WriteLine("RoomId: " + roomId);
