@@ -5,24 +5,27 @@ using TicTacToeGameServer.Models;
 
 namespace TicTacToeGameServer.Services.ClientRequests
 {
-    public class SendMoveRequest : ISendMoveRequest
+    public class SendMoveRequest : IServiceHandler
     {
         private readonly RoomsManager _roomManager;
+
+        public string ServiceName => "SendMove";
         public SendMoveRequest(RoomsManager roomManager)
         {
             _roomManager = roomManager;
         }
 
-        public Dictionary<string, object> Get(User user, Dictionary<string, object> details)
+        public List<Dictionary<string, object>> Handle(User user, Dictionary<string, object> details)
         {
             Dictionary<string, object> response = new Dictionary<string, object>();
-            if(details.ContainsKey("Index"))
+            if(details.ContainsKey("MoveData"))
             {
                 GameRoom room = _roomManager.GetRoom(user.MatchId);
-                if(room != null)
-                    response = room.ReceivedMove(user, details["Index"].ToString());
+                if(room != null) 
+                    response = room.ReceivedMove(user, details["MoveData"].ToString());
+                else response.Add("IsSuccess", false);
             }
-            return response;
+            return new List<Dictionary<string, object>> { response };
         }
     }
 }

@@ -13,18 +13,17 @@ namespace TicTacToeGameServer.Services
     {
 
         private readonly IReadyToPlayService _readyToPlayService;
-        private readonly ISendMoveRequest _sendMoveRequest;
-        private readonly IStopGameRequest _stopGameRequest;
+        // private readonly ISendMoveRequest _sendMoveRequest;
+        // private readonly IStopGameRequest _stopGameRequest;
 
         private readonly IDictionary<string, IServiceHandler> _services;
 
 
-        public MessageService(IReadyToPlayService readyToPlayService, 
-            ISendMoveRequest sendMoveRequest, IStopGameRequest stopGameRequest, IDictionary<string, IServiceHandler> services) 
+        public MessageService(IReadyToPlayService readyToPlayService, IDictionary<string, IServiceHandler> services) 
         {
             _readyToPlayService = readyToPlayService;
-            _sendMoveRequest = sendMoveRequest;
-            _stopGameRequest =  stopGameRequest;
+            // _sendMoveRequest = sendMoveRequest;
+            // _stopGameRequest =  stopGameRequest;
             _services = services;
         }
 
@@ -81,6 +80,19 @@ namespace TicTacToeGameServer.Services
                                         {
                                             Console.WriteLine("Failed to start game");
                                             response.Add("ErrorMessage", serviceResponse[0]["ErrorMessage"]);
+                                        }
+                                        break;
+                                    case "LeaveRoom":
+                                        response.Add("RoomId", serviceResponse[0]["RoomId"]);
+                                        response.Add("IsSuccess", serviceResponse[0]["IsSuccess"]);
+                                        response.Add("Owner", serviceResponse[0]["Owner"]);
+                                        response.Add("Name", serviceResponse[0]["Name"]);
+                                        response.Add("MaxUsers", serviceResponse[0]["MaxUsers"]);
+                                        if ((bool)serviceResponse[0]["RoomExist"]) {
+                                            Console.WriteLine("Room still exists.");
+                                        }
+                                        else {
+                                            Console.WriteLine("Room was deleted.");
                                         }
                                         break;
                                         default:

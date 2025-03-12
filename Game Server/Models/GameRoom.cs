@@ -158,9 +158,10 @@ namespace TicTacToeGameServer.Models
                 response = new Dictionary<string, object>()
                 {
                     {"Service","BroadcastMove" },
-                    {"SenderId",curUser.UserId},
-                    {"Index", boardIndex},
-                    {"CP",_playersOrder[_turnIndex] },
+                    {"Sender",curUser.UserId},
+                    {"RoomId",_matchId },
+                    {"MoveData", boardIndex},
+                    {"NextTurn",_playersOrder[_turnIndex] },
                     {"MC", _moveCounter }
                 };
 
@@ -174,11 +175,12 @@ namespace TicTacToeGameServer.Models
 
         public Dictionary<string, object> StopGame(User user, string winner)
         {
-            CloseRoom();
             Dictionary<string, object> response = new Dictionary<string, object>()
             {
-                {"Service","StopGame"},
-                {"Winner",winner}
+                {"Service","GameStopped"},
+                {"Sender", user.UserId },
+                {"RoomId", _matchId },
+                {"Winner", winner }
             };
 
             string toSend = JsonConvert.SerializeObject(response);
@@ -220,12 +222,6 @@ namespace TicTacToeGameServer.Models
             _turnIndex = _turnIndex == 0 ? 1 : 0;
         }
 
-        private void CloseRoom()
-        {
-            Console.WriteLine("Closed Room " + DateTime.UtcNow.ToShortTimeString());
-           _isRoomActive = false;
-            _roomManager.RemoveRoom(_matchId);
-        }
 
         #endregion
 
@@ -244,6 +240,33 @@ namespace TicTacToeGameServer.Models
         {
             return _subscribedUsers.ContainsKey(userId);
 
+        }
+
+        public void LeaveRoom(string userId, string roomId)
+        {
+            // some data needs to be broadcasted so that other users know to remove the user from their list
+            // of users in the room
+            if (_users.ContainsKey(userId))
+            {
+                _users.Remove(userId);
+                _playersOrder.Remove(userId);
+            }
+            if (_subscribedUsers.ContainsKey(userId))
+            {
+                _subscribedUsers.Remove(userId);
+            }
+            if (_users.Count == 0)
+            {
+                CloseRoom();
+            }
+        }
+
+        
+        private void CloseRoom()
+        {
+            Console.WriteLine("Closed Room " + _matchId + " at " + DateTime.UtcNow.ToShortTimeString());
+           _isRoomActive = false;
+            _roomManager.RemoveRoom(_matchId);
         }
     }
 }

@@ -33,8 +33,6 @@ namespace TicTacToeGameServer.Extensions
                 .AddSingleton<IMatchIdRedisService, MatchIdRedisService>()
                 .AddSingleton<IRandomizerService, RandomizerService>()
                 .AddSingleton<IDateTimeService, DateTimeService>()
-                .AddSingleton<ISendMoveRequest, SendMoveRequest>()
-                .AddSingleton<IStopGameRequest, StopGameRequest>()
                 .AddTransient<ConnectionHandler>()
                 .AddTransient<IDictionary<string, IServiceHandler>, ServiceDictionary>()
                 .AddSingleton<SessionManager>()

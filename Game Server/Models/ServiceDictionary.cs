@@ -23,6 +23,9 @@ namespace TicTacToeGameServer.Models
             Add("JoinRoom", new JoinRoomRequest(roomManager));
             Add("SubscribeRoom", new SubscribeRoomRequest(roomManager));
             Add("StartGame", new StartGameRequest(roomManager));
+            Add("SendMove", new SendMoveRequest(roomManager));
+            Add("StopGame", new StopGameRequest(roomManager));
+            Add("LeaveRoom", new LeaveRoomRequest(roomManager));
         }   
     }
 

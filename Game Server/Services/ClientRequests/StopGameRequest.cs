@@ -5,15 +5,17 @@ using TicTacToeGameServer.Models;
 
 namespace TicTacToeGameServer.Services.ClientRequests
 {
-    public class StopGameRequest : IStopGameRequest
+    public class StopGameRequest : IServiceHandler
     {
         private readonly RoomsManager _roomManager;
+
+        public string ServiceName => "StopGame";
         public StopGameRequest(RoomsManager roomManager)
         {
             _roomManager = roomManager;
         }
 
-        public Dictionary<string, object> Get(User user, Dictionary<string, object> details)
+        public List<Dictionary<string, object>> Handle(User user, Dictionary<string, object> details)
         {
             Dictionary<string, object> response = new Dictionary<string, object>();
             if (details.ContainsKey("Winner"))
@@ -22,7 +24,7 @@ namespace TicTacToeGameServer.Services.ClientRequests
                 if (room != null)
                     response = room.StopGame(user, details["Winner"].ToString());
             }
-            return response;
+            return new List<Dictionary<string,object>> { response };
         }
     }
 }
