@@ -113,19 +113,6 @@ namespace TicTacToeGameServer.Models
             }
         }
 
-        public void LeaveRoom(string userId)
-        {
-            User user = _sessionManager.GetUser(userId);
-            if (user != null)
-            {
-                user.CurUserState = User.UserState.Idle;
-                user.MatchId = "";
-                _sessionManager.UpdateUser(user);
-
-                _playersOrder.Remove(userId);
-                _users.Remove(userId);
-            }
-        }
 
         public Dictionary<string, object> ConvertToDictionary()
         {
@@ -242,17 +229,19 @@ namespace TicTacToeGameServer.Models
 
         }
 
-        public void LeaveRoom(string userId, string roomId)
+        public void LeaveRoom(string userId)
         {
             // some data needs to be broadcasted so that other users know to remove the user from their list
             // of users in the room
             if (_users.ContainsKey(userId))
             {
+                Console.WriteLine("Removing user " + userId + " from joined list at room " + _matchId);
                 _users.Remove(userId);
                 _playersOrder.Remove(userId);
             }
             if (_subscribedUsers.ContainsKey(userId))
             {
+                Console.WriteLine("Removing user " + userId + " from subscribed list at room " + _matchId);
                 _subscribedUsers.Remove(userId);
             }
             if (_users.Count == 0)
