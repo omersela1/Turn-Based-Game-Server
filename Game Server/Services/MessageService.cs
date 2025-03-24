@@ -101,9 +101,7 @@ namespace TicTacToeGameServer.Services
                                 if (response.Count > 0)
                                 {
                                     Console.WriteLine("Response received from service: " + service);
-                                    // JsonSerializerSettings settings = new JsonSerializerSettings();
-                                    // settings.Converters.Add(new CustomJsonConverter());
-                                    string retData = JsonConvert.SerializeObject(response); // add settings as second parameter if needed
+                                    string retData = JsonConvert.SerializeObject(response);
                                     return retData;
                                 }
                                 }
